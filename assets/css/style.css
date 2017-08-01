@@ -1,0 +1,121 @@
+* {
+	color: #777777;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+body {
+	background-color: #4aaaaf;
+}
+
+.headerStyle {
+	font-weight: bold;
+	background-color: #ffffff;
+	height: 100px;
+	overflow: hidden;
+}
+
+.namePlate {
+	color: #ffffff;
+	text-align: center;
+	line-height: 90px;  
+	font-family: 'Georgia', Times, serif;
+	background-color: #4aaaa5;
+	display: inline;
+	position: absolute;
+	left: 20px;
+	height: 90px;
+	width: 250px;
+	font-size: 150%;
+}
+
+.siteLegend {/*
+	border: 5px;
+	border-style: solid;
+	border-color: #008000;*/
+	font-size: 110%;
+	right: 20px;
+	top: 45px;
+	position: absolute;
+}
+
+li {
+	display: inline-block;
+}
+
+.indexBodyDiv {
+	background-color: #f1f1f1;
+	border: 5px;
+	border-style: solid;
+	padding: 50px;
+	background-image: url(../images/concrete-texture.png);
+}
+
+.mainContent {
+	width: 450px;
+	height: 600px;
+	border: 5px;
+	border-style: solid;
+	border-color: red;
+	display: inline-block;
+	padding: 10px;
+	background-color: #ffffff;
+}
+
+.aboutMeHeader {
+	color: #4aaaa5;
+	font-size: 200%;
+	border-bottom: 5px;
+	border-style: solid;
+	border-color: #dddddd;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.profilePic {
+	border-radius: 50%;
+}
+
+.bioText {
+	display: inline-block;
+}
+
+.connectMe {
+	margin: 30px;
+	border: 10px;
+	padding: 30px;
+	border-style: solid;
+	border-color: purple;
+	font-weight: bold;
+	float: right;
+	background-color: #ffffff;
+}
+
+.nameSpot {
+	border: 1px;
+	border-style: solid;
+	border-color: #dddddd;
+}
+
+.messageBox {
+	height: 200px;
+}
+
+.footerBox {
+	background-color: #666666;
+	margin-top: 10px;
+	text-align: center;
+	line-height: 150px;
+	color: #ffffff;	
+}
+
+.inputPar {
+
+	width: 98%;
+	border: 1px;
+	border-style: solid;
+	border-color: #dddddd;
+
+}
