@@ -1,3 +1,5 @@
+/*Page Defaults*/
+
 * {
 	color: #777777;
 	margin: 0px;
@@ -5,93 +7,166 @@
 	border: 0px;
 }
 
+html {
+	height: 100%;
+	margin: 0;
+}
+
+/*Body Specs*/
+
 body {
 	background-color: #4aaaaf;
+	height: 100%;
+	width: 100%;
+	margin: 0;
 }
 
-.headerStyle {
+.contentWrapper {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/*Page Header*/
+
+header {
+	margin: auto;
 	font-weight: bold;
 	background-color: #ffffff;
-	height: 100px;
-	overflow: hidden;
+	position: relative;
+	width: 100%;
+	min-height: 10%;
 }
 
-.namePlate {
+.mainHeaderStyle{
+	border-bottom: 2px;
+	border-style: solid;
+	border-color: #cccccc;
+}
+
+div.namePlate {
+	display: inline-block;
 	color: #ffffff;
 	text-align: center;
 	line-height: 90px;  
 	font-family: 'Georgia', Times, serif;
 	background-color: #4aaaa5;
-	display: inline;
-	position: absolute;
-	left: 20px;
-	height: 90px;
-	width: 250px;
 	font-size: 150%;
+	padding: 0 20px;
 }
 
-.siteLegend {/*
-	border: 5px;
-	border-style: solid;
-	border-color: #008000;*/
+ul.siteLegend {
 	font-size: 110%;
-	right: 20px;
-	top: 45px;
 	position: absolute;
+	top: 0;
+	right: 10px;
+	bottom: 0;
+	left: auto;
+	text-align: center;
+	line-height: 90px;
+}
+
+a {
+	text-decoration: none;
 }
 
 li {
 	display: inline-block;
 }
 
-.indexBodyDiv {
-	background-color: #f1f1f1;
-	border: 5px;
-	border-style: solid;
-	padding: 50px;
-	background-image: url(../images/concrete-texture.png);
-}
+/*Main Section*/
 
-.mainContent {
-	width: 450px;
-	height: 600px;
-	border: 5px;
-	border-style: solid;
-	border-color: red;
-	display: inline-block;
+main {
+	position: relative;
+	height: auto;
+	/*min-height: 75%;*/
+	margin: 0 auto;
 	padding: 10px;
-	background-color: #ffffff;
+	background-image: url(../images/concrete-texture.png);
+	/*display: block;*/
+	overflow: hidden;
 }
 
-.aboutMeHeader {
+section.mainContent {
+	width: 650px;
+	background-color: #ffffff;
+	display: inline-block;
+	border: 1px;
+	border-style: solid;
+	border-color: #e3e3e3;
+	position: absolute;
+	left: 0;
+}
+
+header.mainContentHeader {
+	height: 50px;
 	color: #4aaaa5;
-	font-size: 200%;
+	font-size: 300%;
 	border-bottom: 5px;
 	border-style: solid;
 	border-color: #dddddd;
 	font-weight: bold;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	line-height: 50px;
 }
 
-.profilePic {
-	border-radius: 50%;
-}
+/*Side Bar*/
 
-.bioText {
+aside.connectWithMe {
 	display: inline-block;
+	position: absolute;
+	left: auto;
+	right: 10px;
+	width: 270px;
+	font-weight: bold;
+	background-color: #ffffff;
+	border: 1px;
+	border-style: solid;
+	border-color: #e3e3e3;
 }
 
-.connectMe {
-	margin: 30px;
-	border: 10px;
-	padding: 30px;
+.asideHeader {
+	font-size: 190%;
+	border-bottom: 5px;
 	border-style: solid;
-	border-color: purple;
+	border-color: #dddddd;
 	font-weight: bold;
-	float: right;
-	background-color: #ffffff;
+	color: #4aaaaf;
+	line-height: 50px;
+	height: 50px;
 }
+
+.connectOptions {
+	margin-top: 10px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+}
+
+ul.connectOptions li a img {
+	width: 60px;
+	height: 60px;
+}
+
+/*Footer*/
+
+footer {
+	background-color: #666666;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	text-align: center;
+	line-height: 125px;
+	min-height: 10%;
+}
+
+.footerWords {
+	color: #ffffff;	
+}
+
+/*Contact HTML Page*/
 
 .nameSpot {
 	border: 1px;
@@ -103,19 +178,35 @@ li {
 	height: 200px;
 }
 
-.footerBox {
-	background-color: #666666;
-	margin-top: 10px;
-	text-align: center;
-	line-height: 150px;
-	color: #ffffff;	
-}
-
 .inputPar {
-
-	width: 98%;
+	width: 100%;
 	border: 1px;
 	border-style: solid;
 	border-color: #dddddd;
+}
 
+/*Index HTML Page*/
+
+.profilePic {
+	border-radius: 50%;
+	float: left;
+	margin: 10px;
+}
+
+.bioText {
+	line-height: 2;
+	margin: 5px;
+}
+
+/*Portfolio HTML Page*/
+
+.portfolioOptions {/*
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;*/
+}
+
+.portfolioOptions li a img {
+	width: 275px;
+	height: 275px;
 }
