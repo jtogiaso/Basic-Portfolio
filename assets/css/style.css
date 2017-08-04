@@ -21,7 +21,7 @@ body {
 	margin: 0;
 }
 
-.contentWrapper {
+.fullWrapper {
 	width: 960px;
 	margin: 0 auto;
 	position: relative;
@@ -33,15 +33,12 @@ header {
 	margin: auto;
 	font-weight: bold;
 	background-color: #ffffff;
-	position: relative;
 	width: 100%;
-	min-height: 10%;
 }
 
 .mainHeaderStyle{
-	border-bottom: 2px;
-	border-style: solid;
-	border-color: #cccccc;
+	border-bottom: 2px solid #cccccc;
+
 }
 
 div.namePlate {
@@ -77,25 +74,26 @@ li {
 /*Main Section*/
 
 main {
-	position: relative;
-	height: auto;
-	/*min-height: 75%;*/
+	min-height: calc(100vh - 272px);
 	margin: 0 auto;
-	padding: 10px;
+	padding: 50px;
+	padding-bottom: 0;
 	background-image: url(../images/concrete-texture.png);
-	/*display: block;*/
-	overflow: hidden;
+}
+
+.contentWrapper {
+	width: 650px;
+	margin: 0;
+	display: inline-block;
 }
 
 section.mainContent {
-	width: 650px;
 	background-color: #ffffff;
-	display: inline-block;
 	border: 1px;
 	border-style: solid;
-	border-color: #e3e3e3;
-	position: absolute;
+	border-color: #dddddd;
 	left: 0;
+	padding: 10px;
 }
 
 header.mainContentHeader {
@@ -113,17 +111,20 @@ header.mainContentHeader {
 
 /*Side Bar*/
 
-aside.connectWithMe {
+.asideWrapper {
 	display: inline-block;
 	position: absolute;
-	left: auto;
-	right: 10px;
+	right: 0;
 	width: 270px;
+}
+
+aside.connectWithMe {
 	font-weight: bold;
 	background-color: #ffffff;
 	border: 1px;
 	border-style: solid;
 	border-color: #e3e3e3;
+	padding: 21px;
 }
 
 .asideHeader {
@@ -153,13 +154,13 @@ ul.connectOptions li a img {
 /*Footer*/
 
 footer {
+	height: 125px;
 	background-color: #666666;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10px;
+	margin: 0 auto;
+	border-top: 5px solid #4aaaaf;
 	text-align: center;
 	line-height: 125px;
-	min-height: 10%;
+	width: 100%;
 }
 
 .footerWords {
