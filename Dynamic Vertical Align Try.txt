@@ -25,6 +25,7 @@ body {
 	width: 960px;
 	margin: 0 auto;
 	position: relative;
+	height: 100px;
 }
 
 /*Page Header*/
@@ -42,15 +43,26 @@ header {
 }
 
 div.namePlate {
-	display: inline-block;
-	color: #ffffff;
-	text-align: center;
 	line-height: 90px;  
-	font-family: 'Georgia', Times, serif;
 	background-color: #4aaaa5;
-	font-size: 150%;
 	padding: 0 20px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	display: table;
 }
+
+h1.verticalCenter {
+    display: table-cell;
+    vertical-align: middle;
+    text-align:center;
+    font-size: 150%;
+    font-family: 'Georgia', Times, serif;
+    color: #ffffff;
+}
+
+
 
 ul.siteLegend {
 	font-size: 110%;
@@ -184,11 +196,6 @@ footer {
 	border: 1px;
 	border-style: solid;
 	border-color: #dddddd;
-	margin: 10px 0;
-}
-
-h2 {
-	font-size: 150%;
 }
 
 /*Index HTML Page*/
@@ -210,24 +217,9 @@ h2 {
 	display: flex;
 	justify-content: space-between;
 	list-style-type: none;*/
-	display: table;
-	width: 100%;
 }
 
 .portfolioOptions li a img {
 	width: 275px;
 	height: 275px;
-	display: table-cell;
-	padding: 10px;
-	margin: 5px 0;
-	border: 1px solid #dddddd;
-	position: relative;
-}
-
-.portfolioOptions li a h2 {
-	background-color: #4aaaaf;
-}
-
-.nth2 {
-	float: right;
 }
